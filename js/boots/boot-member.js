@@ -1,8 +1,8 @@
 require([app.path.module('module1')], function(Module1) {
-		console.log('Boot-main');
+		console.log('Boot-member');
 		console.log('---');
 
-    var module2 = new Module1();
+    var module1 = new Module1();
 
-    module2.speak();
+    module1.speak();
 });

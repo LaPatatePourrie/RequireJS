@@ -1,6 +1,6 @@
 define(
 	[
-		'js/modules/module1', 
+		app.path.module('module1'), 
 		'jquery', 
 		'underscore', 
 		'angular'
