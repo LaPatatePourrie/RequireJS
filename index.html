@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Index - RequireJS + Angular</title>
+    <link href="js/libs/jquery-ui/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<div id="container">
+    <p>Check console and js files</p>
+</div>
+
+<script src="js/libs/require.js"></script>
+<script type="text/javascript">
+	require(['js/app'], function (common) {
+		require([app.path.boot('main')]);
+	});
+</script>
+
+</body>
+</html>

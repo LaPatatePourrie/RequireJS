@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Member - RequireJS + Angular</title>
+    <link href="js/libs/jquery-ui/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="container">
+	  <p>Framework JS (RequireJS)</p>
+	  <input type="text" class="date"/>
+	</div>
+
+
+	<script src="js/libs/require.js"></script>
+	<script type="text/javascript">
+		require(['js/app'], function () {
+		require([app.path.boot('member')]);
+		});
+	</script>
+
+</body>
+</html>
